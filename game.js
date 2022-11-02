@@ -134,7 +134,7 @@ class Game{
 
                       if(obstacleGroup.isTouching(players)){
                        //escreva o código para atribuir o valor de gameState a End (fim)
-                       gameState = END;
+                       gameState = 2;
                       }
                   }
                 }
@@ -170,7 +170,7 @@ class Game{
             //escreva o código para criar um obstáculo na posição x aleatória.
 
             
-            x = random(width/2 + 400, width/2 - 400);
+            x = random(50, width - 50);
             y = 0
             var obstacle = createSprite(x, y);
             obstacle.addImage("obstacle", obstacleImage);
